@@ -1,0 +1,458 @@
+<!doctype html>
+
+<html lang="sr">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Triodent - Vaš osmeh je naša briga</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet" />
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: "class",
+				theme: {
+					extend: {
+						colors: {
+							primary: "#0fbdbd",
+							"background-light": "#f6f8f8",
+							"background-dark": "#102222",
+						},
+						fontFamily: {
+							display: ["Manrope", "sans-serif"],
+						},
+						borderRadius: {
+							DEFAULT: "0.25rem",
+							lg: "0.5rem",
+							xl: "0.75rem",
+							full: "9999px",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body
+		class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 selection:bg-primary/30">
+		<!-- Navbar -->
+		<nav
+			class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center h-20">
+					<div class="flex items-center gap-2">
+						<div
+							class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+							<span class="material-icons text-white">medical_services</span>
+						</div>
+						<span
+							class="text-2xl font-800 tracking-tight text-primary uppercase"
+							>Triodent</span
+						>
+					</div>
+					<div class="hidden md:flex items-center space-x-8">
+						<a
+							class="font-medium hover:text-primary transition-colors"
+							href="#o-nama"
+							>O nama</a
+						>
+						<a
+							class="font-medium hover:text-primary transition-colors"
+							href="#usluge"
+							>Usluge</a
+						>
+						<a
+							class="font-medium hover:text-primary transition-colors"
+							href="#nas-tim"
+							>Naš tim</a
+						>
+						<a
+							class="font-medium hover:text-primary transition-colors"
+							href="#kontakt"
+							>Kontakt</a
+						>
+					</div>
+					<div class="flex items-center gap-4">
+						<a
+							class="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg font-bold transition-all shadow-sm active:scale-95"
+							href="#kontakt">
+							Zakažite pregled
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Hero Section -->
+		<section class="relative h-[90vh] flex items-center overflow-hidden">
+			<div class="absolute inset-0 z-0">
+				<img
+					class="w-full h-full object-cover"
+					data-alt="Modern high-tech dental clinic interior with bright lighting"
+					src="assets/triodentHero.jpg" />
+				<div
+					class="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-background-dark/40 to-transparent"></div>
+			</div>
+			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+				<div class="max-w-2xl">
+					<span
+						class="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary font-bold text-sm mb-6 border border-primary/20">
+						Dobrodošli u Triodent
+					</span>
+					<h1
+						class="text-5xl md:text-7xl font-800 text-white mb-6 leading-tight">
+						Vaš osmeh je <span class="text-primary">naša briga</span>
+					</h1>
+					<p class="text-xl text-slate-200 mb-10 leading-relaxed max-w-xl">
+						Vrhunska stomatološka nega uz najsavremeniju tehnologiju. Gradimo
+						poverenje i stvaramo zdrave osmehe još od 2007. godine.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a
+							class="px-8 py-4 bg-primary text-white font-bold rounded-xl text-lg hover:bg-primary/90 transition-all text-center"
+							href="#kontakt">
+							Zakažite pregled
+						</a>
+						<a
+							class="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-xl text-lg hover:bg-white/20 transition-all text-center"
+							href="#usluge">
+							Naše usluge
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- O nama Section -->
+		<section class="py-24 bg-white dark:bg-background-dark/50" id="o-nama">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid lg:grid-cols-2 gap-16 items-center">
+					<div class="relative">
+						<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+							<img
+								class="w-full h-full object-cover"
+								data-alt="Female dentist talking to patient in modern office"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQt8jQSFPaLzPxdjMfCV6FjJ_bJmkg6F6PbRVJaX-_PsGcBdBhN4JVZ2C6IEuj68LNpmcDQyjXiUKgL42HSDuIYMGiUmdXKrCiBcMLiqc_s6pyJOMsuocm35ZnfIG5rlM4Bclb2bexk6T9H9x5_WUCiFQTwx4U3xaxrURz0cF3oKWCYH1JapMzyyY_kOlCARlUS7eCXnIn8ocjylU3SAeYzOkDfTZulHoi6PGq9GYy5BaNp7bwKWI5u6zb_YQFFsWLArWXZlCSOMo" />
+						</div>
+						<div
+							class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl shadow-xl text-white">
+							<p class="text-4xl font-800">17+</p>
+							<p class="text-sm font-medium uppercase tracking-wider">
+								Godina iskustva
+							</p>
+						</div>
+					</div>
+					<div>
+						<h2 class="text-3xl font-800 mb-6 text-slate-900 dark:text-white">
+							Tradicija i Kvalitet od 2007.
+						</h2>
+						<div
+							class="space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+							<p>
+								Stomatološka ordinacija Triodent osnovana je 2007. godine sa
+								vizijom da pacijentima pruži besprekornu stomatološku uslugu u
+								prijatnom i modernom ambijentu. Tokom skoro dve decenije rada,
+								postali smo sinonim za poverenje i stručnost.
+							</p>
+							<p>
+								Naš fokus je na individualnom pristupu svakom pacijentu,
+								koristeći najsavremenije materijale i opremu renomiranih
+								svetskih proizvođača. Kontinuirano usavršavanje našeg tima
+								garantuje Vam tretmane po najvišim standardima savremene
+								stomatologije.
+							</p>
+						</div>
+						<div class="mt-10 grid grid-cols-2 gap-4">
+							<div class="flex items-center gap-3">
+								<span class="material-icons text-primary">verified</span>
+								<span class="font-bold">Sertifikovan tim</span>
+							</div>
+							<div class="flex items-center gap-3">
+								<span class="material-icons text-primary">biotech</span>
+								<span class="font-bold">Moderna tehnologija</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Usluge Section -->
+		<section
+			class="py-24 bg-background-light dark:bg-background-dark"
+			id="usluge">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-800 mb-4 text-slate-900 dark:text-white">
+						Naše Usluge
+					</h2>
+					<div class="w-20 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+					<p
+						class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+						Sveobuhvatna stomatološka rešenja na jednom mestu, prilagođena vašim
+						potrebama i željama.
+					</p>
+				</div>
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<!-- Service 1 -->
+					<div
+						class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all hover:-translate-y-2 group shadow-sm hover:shadow-xl">
+						<div
+							class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+							<span class="material-icons text-3xl">brush</span>
+						</div>
+						<h3 class="text-xl font-800 mb-3">Estetska stomatologija</h3>
+						<p class="text-slate-600 dark:text-slate-400 mb-4">
+							Izbeljivanje zuba, viniri i estetske plombe za vaš savršen osmeh.
+						</p>
+					</div>
+					<!-- Service 2 -->
+					<div
+						class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all hover:-translate-y-2 group shadow-sm hover:shadow-xl">
+						<div
+							class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+							<span class="material-icons text-3xl"
+								>settings_backup_restore</span
+							>
+						</div>
+						<h3 class="text-xl font-800 mb-3">Protetika</h3>
+						<p class="text-slate-600 dark:text-slate-400 mb-4">
+							Krune, mostovi i sve vrste proteza vrhunskog kvaliteta i prirodnog
+							izgleda.
+						</p>
+					</div>
+					<!-- Service 3 -->
+					<div
+						class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all hover:-translate-y-2 group shadow-sm hover:shadow-xl">
+						<div
+							class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+							<span class="material-icons text-3xl">health_and_safety</span>
+						</div>
+						<h3 class="text-xl font-800 mb-3">Implanti</h3>
+						<p class="text-slate-600 dark:text-slate-400 mb-4">
+							Nadoknada izgubljenih zuba najsavremenijim implantološkim
+							sistemima.
+						</p>
+					</div>
+					<!-- Service 4 -->
+					<div
+						class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all hover:-translate-y-2 group shadow-sm hover:shadow-xl">
+						<div
+							class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+							<span class="material-icons text-3xl">bolt</span>
+						</div>
+						<h3 class="text-xl font-800 mb-3">Laserska stomatologija</h3>
+						<p class="text-slate-600 dark:text-slate-400 mb-4">
+							Bezbolne i brze intervencije primenom najmodernije laserske
+							tehnologije.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Naš tim Section -->
+		<section class="py-24 bg-white dark:bg-background-dark/50" id="nas-tim">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-800 mb-4 text-slate-900 dark:text-white">
+						Upoznajte Naš Tim
+					</h2>
+					<div class="w-20 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+					<p
+						class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+						Stručni tim doktora posvećen vašem oralnom zdravlju i komforu.
+					</p>
+				</div>
+				<div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+					<!-- Doctor 1 -->
+					<div
+						class="flex flex-col md:flex-row gap-8 items-center bg-background-light dark:bg-slate-800/30 p-8 rounded-3xl border border-primary/5 group">
+						<div
+							class="w-48 h-48 flex-shrink-0 overflow-hidden rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-500 shadow-lg">
+							<img
+								class="w-full h-full object-cover"
+								data-alt="Portrait of Dr. Jelena Mirkovic professional dentist"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQCQJwnziQb_QXZ6fQZ4Vs4B-_oroqZb5XTHtT15Kpi0vDeD3eT5NxoMdxZq0KgnR7PtQXU09n0N60i-SxEQNIQceiKm_4LBdU3bnRarZ3bQuR67wIwZ3ENIUPFXkT2DRzvXiLeZdNbsGePyCVA4rtwnkQdqDYhe5OkAOve6FDMjQlmYZ8fJl3LGOQxLBxOdD5g2FvaXExy-IZsRl_Nr1V8OSYvjo5ZwKN8Op_vjlmcEcq3sZ7iqqypiwAMZ0K2K1eeGbWQze09rQ" />
+						</div>
+						<div>
+							<h3 class="text-2xl font-800 text-slate-900 dark:text-white mb-1">
+								Dr. Jelena Mirković
+							</h3>
+							<p class="text-primary font-bold mb-4">
+								Specijalista oralne hirurgije
+							</p>
+							<p
+								class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 italic">
+								"Kvalitet usluge i zadovoljstvo pacijenta su naša najveća
+								nagrada."
+							</p>
+							<div class="flex gap-4">
+								<span
+									class="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm">
+									<span class="material-icons text-primary text-xl"
+										>facebook</span
+									>
+								</span>
+								<span
+									class="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm">
+									<span class="material-icons text-primary text-xl"
+										>camera_alt</span
+									>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!-- Doctor 2 -->
+					<div
+						class="flex flex-col md:flex-row gap-8 items-center bg-background-light dark:bg-slate-800/30 p-8 rounded-3xl border border-primary/5 group">
+						<div
+							class="w-48 h-48 flex-shrink-0 overflow-hidden rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-500 shadow-lg">
+							<img
+								class="w-full h-full object-cover"
+								data-alt="Portrait of Dr. Katarina Milosavljevic professional dentist"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHbAUJRsO3Hzu87EpIcmwAAzv6R8QMGFatsUEAGweTyGkGK1zIpHKokgZehi6_2plp-e4KR_0cznFp-Aa9vAuy93paYDliB5CiVunZscKNGq_9XvS7XypTzDGBlXegD1Jb40LYR0JExADwGt6MCHcKexMZpgXxxLHSPMVJ5q14ark0GZemJ1C6PFTPRZBudYTQe8Q4gVpCQTSgALrilwGZm0jV9akJaDu6Rg8Kxho6pk2j4NNo2lz3NeUySL-_udsufWudbpJM75I" />
+						</div>
+						<div>
+							<h3 class="text-2xl font-800 text-slate-900 dark:text-white mb-1">
+								Dr. Katarina Milosavljević
+							</h3>
+							<p class="text-primary font-bold mb-4">Stomatolog protetičar</p>
+							<p
+								class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 italic">
+								"Moderni materijali i estetika za osmeh koji osvaja na prvi
+								pogled."
+							</p>
+							<div class="flex gap-4">
+								<span
+									class="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm">
+									<span class="material-icons text-primary text-xl"
+										>facebook</span
+									>
+								</span>
+								<span
+									class="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm">
+									<span class="material-icons text-primary text-xl"
+										>camera_alt</span
+									>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Kontakt & Footer -->
+		<section class="pt-24 pb-12 bg-background-dark text-white" id="kontakt">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid lg:grid-cols-3 gap-12 mb-16">
+					<!-- Info Column 1 -->
+					<div>
+						<div class="flex items-center gap-2 mb-8">
+							<div
+								class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+								<span class="material-icons text-white text-lg"
+									>medical_services</span
+								>
+							</div>
+							<span
+								class="text-2xl font-800 tracking-tight text-white uppercase"
+								>Triodent</span
+							>
+						</div>
+						<p class="text-slate-400 leading-relaxed mb-8">
+							Stomatološka ordinacija Triodent nudi vrhunske tretmane u
+							Beogradu. Vaše zdravlje i lep osmeh su naša misija.
+						</p>
+						<div class="space-y-4">
+							<div class="flex items-center gap-4">
+								<div
+									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+									<span class="material-icons">location_on</span>
+								</div>
+								<span class="text-slate-300">Vojvode Stepe 99, Beograd</span>
+							</div>
+							<div class="flex items-center gap-4">
+								<div
+									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+									<span class="material-icons">call</span>
+								</div>
+								<div class="flex flex-col">
+									<a
+										class="text-slate-300 hover:text-primary transition-colors"
+										href="tel:+381112476543"
+										>+381 11 247 6543</a
+									>
+									<a
+										class="text-slate-300 hover:text-primary transition-colors"
+										href="tel:+381641234567"
+										>+381 64 123 4567</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Info Column 2 (Working Hours) -->
+					<div>
+						<h4 class="text-xl font-800 mb-8 border-l-4 border-primary pl-4">
+							Radno vreme
+						</h4>
+						<ul class="space-y-4 text-slate-400">
+							<li class="flex justify-between border-b border-white/5 pb-2">
+								<span>Ponedeljak - Petak:</span>
+								<span class="text-white font-medium">09:00 - 20:00</span>
+							</li>
+							<li class="flex justify-between border-b border-white/5 pb-2">
+								<span>Subota:</span>
+								<span class="text-white font-medium">10:00 - 15:00</span>
+							</li>
+							<li
+								class="flex justify-between border-b border-white/5 pb-2 text-primary/80 italic">
+								<span>Nedelja:</span>
+								<span>Samo hitni slučajevi</span>
+							</li>
+						</ul>
+					</div>
+					<!-- Map / Location -->
+					<div
+						class="rounded-2xl overflow-hidden h-64 shadow-lg border border-white/10">
+						<img
+							class="w-full h-full object-cover"
+							data-alt="Map location showing Vojvode Stepe street in Belgrade"
+							data-location="Belgrade"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzgDMba1lJCcMvvVtK9hh7gB2SeGhEsLBf1XV0vfJhtmkVFD_kXzBaD2d7FRsQFlLND4KHLpsURhzu9-cDS34sDm-vxgaEQK4OBGf3p0_PWEauZfYB8fuzxIrihA_i6Zr2HIsMzHl6tiVF_6XniRW-gpr2Fwo6fXJAX4L0dpEPFDeY9fCEy0IwJrykOL8YV_TFt-Oq9uNpqHU6K3iJyYNxQwBll9hp50I7Fx683x7tr79cCIvE6wKZn6_I6ZYkUNnyjsDd3cFYOgU" />
+					</div>
+				</div>
+				<!-- Footer Bottom -->
+				<div
+					class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+					<p class="text-slate-500 text-sm">
+						© 2024 Triodent Stomatološka Ordinacija. Sva prava zadržana.
+					</p>
+					<div class="flex gap-8 text-sm text-slate-500">
+						<a class="hover:text-primary transition-colors" href="#"
+							>Politika privatnosti</a
+						>
+						<a class="hover:text-primary transition-colors" href="#"
+							>Uslovi korišćenja</a
+						>
+					</div>
+					<div class="flex gap-4">
+						<a
+							class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all"
+							href="#">
+							<span class="material-icons text-sm">facebook</span>
+						</a>
+						<a
+							class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all"
+							href="#">
+							<span class="material-icons text-sm">alternate_email</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
