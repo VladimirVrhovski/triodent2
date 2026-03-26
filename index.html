@@ -24,13 +24,29 @@
 			<div class="logo-container">
 				<img src="assets/triodentLogo1.png" alt="" />
 			</div>
-			<ul class="nav-links">
-				<li><a href="" class="nav-link">O nama</a></li>
-				<li><a href="" class="nav-link">Usluge</a></li>
-				<li><a href="" class="nav-link">Naš tim</a></li>
-				<li><a href="" class="nav-link">Kontakt</a></li>
-			</ul>
-			<button class="action-button">Zakaži pregled</button>
+			<div class="mobile-nav-container">
+				<label for="nav-toggle"
+					><img src="assets/menu.svg" alt="menu" class="nav-menu"
+				/></label>
+				<input
+					type="checkbox"
+					class="nav-toggle"
+					name="nav-toggle"
+					id="nav-toggle" />
+				<label for="nav-toggle" id="overlay"></label>
+				<div class="links-container">
+					<label for="nav-toggle"
+						><img src="assets/close.svg" alt="close" class="nav-close"
+					/></label>
+					<ul class="nav-links">
+						<li><a href="" class="nav-link">O nama</a></li>
+						<li><a href="" class="nav-link">Usluge</a></li>
+						<li><a href="" class="nav-link">Naš tim</a></li>
+						<li><a href="" class="nav-link">Kontakt</a></li>
+					</ul>
+					<button class="action-button">Zakaži pregled</button>
+				</div>
+			</div>
 		</nav>
 
 		<main>
@@ -209,8 +225,24 @@
 							</div>
 							<div class="team-member-info">
 								<p class="team-member-name">Dr. Katarina Milosavljević</p>
-								<span class="team-member-highlight"></span>
-								<p class="team-member-description"></p>
+								<span class="team-member-highlight"
+									>Specijalista ortopedije vilica</span
+								>
+								<p class="team-member-description">
+									Rodjena 3.05.1970 u Beogradu. Posle završenog osnovnog i
+									srednjeg obrazovanja 1989 godine započinje studije na
+									Stomatološkom fakultetu u Beogradu koje je uspešno završila
+									1996 godine.Potom stažira i specijalizira Ortopediju vilica na
+									Vojno-medicinskoj akademiji(VMA)od 1997-2001 god. Radno
+									iskustvo stiče u renomiranim privatnim ordinacijama u Beogradu
+									a 2006 godine postaje osnivač stomatološke ordinacije
+									"Triodent". Stalna edukacija u poljima ortopedije
+									vilica,estetske stomatologije i protetike produbljuje na
+									seminarima u zemlji u inostranstvu. Od 2016 godine postaje
+									redovan gostujući stomatolog u Nemačkoj (Altshausen Praxis
+									König &Kollegen) Član stomatološke komore Nemačke Član
+									stomatološke komore Srbije Član udruženja ortodonata Srbije
+								</p>
 							</div>
 						</div>
 					</div>
@@ -219,28 +251,78 @@
 		</main>
 
 		<footer class="main-footer">
-			<div class="footer-text">
-				<img src="" alt="" class="footer-logo" />
-				<p class="footer-description">
-					Stomatološka ordinacija Triodent nudi vrhunske tretmane u Beogradu.
-					Vaše zdravlje i lep osmeh su naša misija.
-				</p>
-			</div>
-			<div class="footer-contact">
-				<div>
-					<img src="assets/Icon-9.svg" alt="" />
-					<p></p>
+			<div class="footer-wrapper">
+				<div class="footer-text">
+					<img src="assets/triodentLogo1.png" alt="logo" class="footer-logo" />
+					<p class="footer-description">
+						Stomatološka ordinacija Triodent nudi vrhunske tretmane u Beogradu.
+						Vaše zdravlje i lep osmeh su naša misija.
+					</p>
 				</div>
-				<div>
-					<img src="assets/Icon-12.svg" alt="" />
-					<p></p>
+				<div class="footer-contact">
+					<p class="footer-title">Kontakt</p>
+					<div class="contact-row">
+						<svg
+							width="22"
+							height="26"
+							viewBox="0 0 14 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.22656 8.74219C5.71094 9.22656 6.29688 9.46875 6.98438 9.46875C7.67188 9.46875 8.25781 9.22656 8.74219 8.74219C9.22656 8.25781 9.46875 7.67188 9.46875 6.98438C9.46875 6.29688 9.22656 5.71094 8.74219 5.22656C8.25781 4.74219 7.67188 4.5 6.98438 4.5C6.29688 4.5 5.71094 4.74219 5.22656 5.22656C4.74219 5.71094 4.5 6.29688 4.5 6.98438C4.5 7.67188 4.74219 8.25781 5.22656 8.74219ZM2.03906 2.03906C3.39844 0.679688 5.04688 0 6.98438 0C8.92188 0 10.5703 0.679688 11.9297 2.03906C13.2891 3.39844 13.9688 5.04688 13.9688 6.98438C13.9688 7.95312 13.7266 9.0625 13.2422 10.3125C12.7578 11.5625 12.1719 12.7344 11.4844 13.8281C10.7969 14.9219 10.1172 15.9453 9.44531 16.8984C8.77344 17.8516 8.20312 18.6094 7.73438 19.1719L6.98438 19.9688C6.79688 19.75 6.54688 19.4609 6.23438 19.1016C5.92188 18.7422 5.35938 18.0234 4.54688 16.9453C3.73438 15.8672 3.02344 14.8203 2.41406 13.8047C1.80469 12.7891 1.25 11.6406 0.75 10.3594C0.25 9.07812 0 7.95312 0 6.98438C0 5.04688 0.679688 3.39844 2.03906 2.03906Z"
+								fill="#0FBDBD" />
+						</svg>
+						<p>Vojvode Stepe 99, Beograd</p>
+					</div>
+					<div class="contact-row">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 18 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.0156 12.375C17.2969 12.375 17.5312 12.4688 17.7188 12.6562C17.9062 12.8438 18 13.0781 18 13.3594V16.8281C18 17.6094 17.6719 18 17.0156 18C12.3594 18 8.35938 16.3281 5.01562 12.9844C1.67188 9.64062 0 5.64062 0 0.984375C0 0.328125 0.390625 0 1.17188 0H4.64062C4.92188 0 5.15625 0.09375 5.34375 0.28125C5.53125 0.46875 5.625 0.703125 5.625 0.984375C5.625 2.20312 5.8125 3.375 6.1875 4.5C6.3125 4.90625 6.23438 5.25 5.95312 5.53125L4.03125 7.21875C5.46875 10.2188 7.76562 12.4844 10.9219 14.0156L12.4688 12.0469C12.6562 11.8594 12.8906 11.7656 13.1719 11.7656C13.3281 11.7656 13.4375 11.7812 13.5 11.8125C14.625 12.1875 15.7969 12.375 17.0156 12.375Z"
+								fill="#0FBDBD" />
+						</svg>
+						<p><a href="tel:+381641847750">+381 64 184 7750</a></p>
+					</div>
+					<div class="contact-row">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 18 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.0156 12.375C17.2969 12.375 17.5312 12.4688 17.7188 12.6562C17.9062 12.8438 18 13.0781 18 13.3594V16.8281C18 17.6094 17.6719 18 17.0156 18C12.3594 18 8.35938 16.3281 5.01562 12.9844C1.67188 9.64062 0 5.64062 0 0.984375C0 0.328125 0.390625 0 1.17188 0H4.64062C4.92188 0 5.15625 0.09375 5.34375 0.28125C5.53125 0.46875 5.625 0.703125 5.625 0.984375C5.625 2.20312 5.8125 3.375 6.1875 4.5C6.3125 4.90625 6.23438 5.25 5.95312 5.53125L4.03125 7.21875C5.46875 10.2188 7.76562 12.4844 10.9219 14.0156L12.4688 12.0469C12.6562 11.8594 12.8906 11.7656 13.1719 11.7656C13.3281 11.7656 13.4375 11.7812 13.5 11.8125C14.625 12.1875 15.7969 12.375 17.0156 12.375Z"
+								fill="#0FBDBD" />
+						</svg>
+						<p><a href="tel:+381641207515">+381 64 120 7515</a></p>
+					</div>
 				</div>
+				<div class="footer-hours">
+					<p class="footer-title">Radno vreme</p>
+					<div class="hours">
+						<p class="day">Ponedeljak-Petak</p>
+						<p class="hour">08:00 - 17:00</p>
+						<p class="day">Subota</p>
+						<p class="hour">09:00 - 13:00</p>
+						<p class="day">Nedelja</p>
+						<p class="hour text-highlight">Zatvoreno</p>
+					</div>
+				</div>
+				<!-- <div class="footer-map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.0360506268676!2d20.470575675906147!3d44.78007037107103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70698c46c097%3A0x7655aa5143a73116!2sTRIODENT%20stomatoloska%20ordinacija!5e0!3m2!1ssr!2srs!4v1774441484999!5m2!1ssr!2srs"
+						width="320"
+						height="360"
+						style="border-radius: 0.25rem; border: none"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div> -->
 			</div>
-			<div class="footer-hours">
-				<p class="hours-title"></p>
-				<div class="hours"></div>
-			</div>
-			<div class="footer-map"><iframe src="" frameborder="0"></iframe></div>
 		</footer>
 	</body>
 </html>
