@@ -20,6 +20,58 @@
 			type="image/x-icon" />
 	</head>
 	<body>
+		<input
+			type="checkbox"
+			class="cta-toggle"
+			name="cta-toggle"
+			id="cta-toggle" />
+		<label for="cta-toggle" class="cta-window">
+			<div class="cta-container">
+				<div class="cta-header">
+					<h2 class="cta-title">Zakažite pregled</h2>
+					<label for="cta-toggle" class="cta-close">
+						<img src="assets/close.svg" alt="" />
+					</label>
+				</div>
+				<form action="" class="cta-form">
+					<label>Ime i prezime:</label>
+					<input
+						type="text"
+						placeholder="Unesite Vaše ime i prezime"
+						class="cta-input" />
+					<label>Email adresa:</label>
+					<input
+						type="email"
+						placeholder="Unesite Vašu email adresu"
+						class="cta-input" />
+					<label>Email adresa:</label>
+					<input
+						type="email"
+						placeholder="Unesite Vašu email adresu"
+						class="cta-input" />
+					<label>Izaberite datum:</label>
+					<input
+						type="date"
+						placeholder="Unesite željeni datum pregleda"
+						class="cta-input" />
+					<label>Izaberite doktora:</label>
+					<select class="cta-input">
+						<option value=""></option>
+						<option value="1">Dr. Jelena Mirković</option>
+						<option value="2">Dr. Katarina Milosavljević</option>
+					</select>
+					<label>Poruka:</label>
+					<textarea
+						placeholder="Unesite poruku"
+						class="cta-input"
+						rows="5"></textarea>
+					<button class="action-button cta-button" type="submit">
+						Zakaži pregled
+					</button>
+				</form>
+			</div>
+		</label>
+
 		<nav>
 			<div class="logo-container">
 				<img src="assets/triodentLogo1.png" alt="" />
@@ -44,7 +96,7 @@
 						<li><a href="#team" class="nav-link">Naš tim</a></li>
 						<li><a href="#contact" class="nav-link">Kontakt</a></li>
 					</ul>
-					<button class="action-button">Zakaži pregled</button>
+					<label for="cta-toggle" class="action-button">Zakaži pregled</label>
 				</div>
 			</div>
 		</nav>
@@ -62,7 +114,9 @@
 							poverenje i stvaramo zdrave osmehe još od 2007. godine.
 						</p>
 						<div class="hero-button-wrapper">
-							<button class="action-button">Zakaži pregled</button>
+							<label for="cta-toggle" class="action-button"
+								>Zakaži pregled</label
+							>
 						</div>
 					</div>
 				</div>
