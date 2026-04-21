@@ -33,38 +33,50 @@
 						<img src="assets/close.svg" alt="" />
 					</label>
 				</div>
-				<form action="" class="cta-form">
+				<form
+					action="https://api.web3forms.com/submit"
+					method="POST"
+					class="cta-form">
+					<input
+						type="hidden"
+						name="access_key"
+						value="13e1eeec-439b-42ea-b1c6-c5be81823963" />
 					<label>Ime i prezime:</label>
 					<input
 						type="text"
 						placeholder="Unesite Vaše ime i prezime"
-						class="cta-input" />
+						name="name"
+						class="cta-input"
+						required />
 					<label>Email adresa:</label>
 					<input
 						type="email"
 						placeholder="Unesite Vašu email adresu"
-						class="cta-input" />
-					<label>Email adresa:</label>
-					<input
-						type="email"
-						placeholder="Unesite Vašu email adresu"
-						class="cta-input" />
+						name="email"
+						class="cta-input"
+						required />
 					<label>Izaberite datum:</label>
 					<input
 						type="date"
 						placeholder="Unesite željeni datum pregleda"
-						class="cta-input" />
+						name="date"
+						class="cta-input"
+						required />
 					<label>Izaberite doktora:</label>
-					<select class="cta-input">
-						<option value=""></option>
-						<option value="1">Dr. Jelena Mirković</option>
-						<option value="2">Dr. Katarina Milosavljević</option>
+					<select class="cta-input" name="doctor" required>
+						<option value="svejedno"></option>
+						<option value="Dr. Jelena Mirkovic">Dr. Jelena Mirković</option>
+						<option value="Dr. Katarina Milosavljevic">
+							Dr. Katarina Milosavljević
+						</option>
 					</select>
 					<label>Poruka:</label>
 					<textarea
 						placeholder="Unesite poruku"
+						name="message"
 						class="cta-input"
-						rows="5"></textarea>
+						rows="5"
+						required></textarea>
 					<button class="action-button cta-button" type="submit">
 						Zakaži pregled
 					</button>
@@ -433,16 +445,6 @@
 						<p class="hour text-highlight">Zatvoreno</p>
 					</div>
 				</div>
-				<!-- <div class="footer-map">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.0360506268676!2d20.470575675906147!3d44.78007037107103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70698c46c097%3A0x7655aa5143a73116!2sTRIODENT%20stomatoloska%20ordinacija!5e0!3m2!1ssr!2srs!4v1774441484999!5m2!1ssr!2srs"
-						width="320"
-						height="360"
-						style="border-radius: 0.25rem; border: none"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div> -->
 			</div>
 		</footer>
 	</body>
